@@ -1,0 +1,23 @@
+{
+  "name": "orangehrm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mochammadaliesf/orangeHRM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mochammadaliesf/orangeHRM/issues"
+  },
+  "homepage": "https://github.com/mochammadaliesf/orangeHRM#readme",
+  "devDependencies": {
+    "@playwright/mcp": "github:microsoft/playwright-mcp",
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.3"
+  }
+}
