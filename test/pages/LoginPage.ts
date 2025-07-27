@@ -8,8 +8,8 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.usernameField = page.getByPlaceholder('Username');
-    this.passwordField = page.getByPlaceholder('Password');
+    this.usernameField = page.getByRole('textbox', { name: 'Username' });
+    this.passwordField = page.getByRole('textbox', { name: 'Password' });
     this.loginButton = page.getByRole('button', { name: 'Login' });
   }
 
@@ -29,4 +29,4 @@ export class LoginPage {
     await expect(this.page.getByRole('heading', { name: 'Dashboard' })).toBeVisible();
     await expect(this.page).toHaveURL(/.*\/dashboard/);
   }
-} 
+}
