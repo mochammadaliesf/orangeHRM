@@ -6,6 +6,11 @@ export const createUser = async (page) => {
   const admin = new AdminPage(page);
   await admin.adminLink.click();
   await admin.addButton.click();
+
+  // Assert that the Add User form is visible
+  await expect(admin.addUserHeader).toBeVisible();
+  await expect(admin.userRoleSelect).toBeVisible();
+
   await admin.userRoleSelect.selectOption('ESS');
   await admin.employeeNameInput.fill('Linda Anderson');
   await admin.usernameInput.fill('testuser123');
